@@ -48,6 +48,21 @@ h1, h2, h4, p {
     height: auto;
 }
 
+.work_container {
+    box-sizing: border-box;
+    padding: 6px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 640px){
+    .work_container { width: 50%; }
+    .htext { text-align: right; }
+}
+
+@media only screen and (min-width: 960px) {
+    .work_container { width: 33%; }
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -60,11 +75,6 @@ h1, h2, h4, p {
     font-size: 28pt;
     margin-bottom: 12px;
     color: #7D97AD;
-}
-
-.work_container {
-    max-width: 300px;
-    margin: 6px;
 }
 
 .work_thumbnail {
@@ -86,10 +96,6 @@ h1, h2, h4, p {
 
 .automargin {
     margin: auto;
-}
-
-.htext {
-    text-align: right;
 }
 
 .header_title {
