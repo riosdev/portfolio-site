@@ -32,7 +32,8 @@ h1, h2, h4, p {
 .header_title_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-right: .5em;
 }
 
 #header_separator {
@@ -56,6 +57,7 @@ h1, h2, h4, p {
 
 @media only screen and (min-width: 640px){
     .work_container { width: 50%; }
+    .header_title_container { justify-content: flex-end; }
     .htext { text-align: right; }
 }
 
